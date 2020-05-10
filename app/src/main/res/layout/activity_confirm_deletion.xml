@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".confirmDeletion">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scaleType="center"
+        android:background="#ff1a1a"
+        android:fontFamily="@font/sfpro"
+        android:src="@drawable/ic_warning_yellow_28dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:text="Are you sure you want to delete this user?"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/sfpro">
+
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".voters.votersDialog.VoterDetailsPopUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scaleType="center"
+        android:background="#FF0099CC"
+        android:fontFamily="@font/sfpro"
+        android:src="@drawable/ic_person_outline_light_24dp"/>
+
+    <TextView
+        android:id="@+id/fullNameLabel"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/sfpro"
+        android:text="Full Name:" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="317dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/sfpro"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/deleteUserBtn"
+            android:layout_width="25dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:drawableStart="@drawable/ic_delete_forever_black_24dp">
+
+        </Button>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/sfpro"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/addressHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/sfpro"
+        android:text="test"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        >
+
+        <TextView
+            android:id="@+id/userCity"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sfpro"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/userPostCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="@font/sfpro"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/electionNumberPrefixInfoHolder"
+            android:layout_width="164dp"
+            android:layout_height="23dp"
+            android:text='Electoral Number Prefix:'
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/electionNumberHolder"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text='Electoral Number:'
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/electionNumberPrefixInfo"
+            android:layout_width="136dp"
+            android:layout_height="23dp"
+            android:text='ENP NUM'
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/electionNumber"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text='EN:'
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/electionNumberSufixHolder"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text='Electoral Number Sufix:'
+        />
+    <TextView
+        android:id="@+id/electionNumberSufix"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text='-'
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/partySelectorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/sfpro"
+        android:shadowColor="#252728"
+        android:text="What party are you voting for? :" />
+
+    <Spinner
+        android:id="@+id/partySelectorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="6dp"
+        android:layout_gravity="left"/>
+
+<!--    <Switch-->
+<!--        android:id="@+id/switch1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="4dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginRight="4dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:textOn="YES"-->
+<!--        android:textOff="NO"-->
+<!--        android:text="Do you have any questions for us?" />-->
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/questionToggle"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:shadowColor="#606060"
+        android:text="Would you ask questions?"
+        android:textAlignment="viewStart"
+        android:textColor="#FF606060"
+        android:textOff="NO"
+        android:textOn="YES"
+        android:textSize="14sp"
+        android:thumb="@drawable/switch_icons"
+        app:showText="true"
+        app:track="@drawable/switch_icon_track" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/giveContactInformation"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:shadowColor="#606060"
+        android:text="Would you like to give contact information ?"
+        android:textAlignment="viewStart"
+        android:textColor="#FF606060"
+        android:textOff="NO"
+        android:textOn="YES"
+        android:textSize="14sp"
+        android:thumb="@drawable/switch_icons"
+        app:showText="true"
+        app:track="@drawable/switch_icon_track" />
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Questions:" />
+
+    <EditText
+        android:id="@+id/questionOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/contactInfoHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Contact Information:" />
+
+    <EditText
+        android:id="@+id/contactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"/>
+
+</LinearLayout>

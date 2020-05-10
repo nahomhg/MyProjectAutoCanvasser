@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".canvassers.canvasserDistrict.ViewSetCanvassersDistricts">
+
+    <TextView
+        android:id="@+id/canvasserPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sfpro"
+        android:text="Assign District to Canvassers"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/canvasserContactedListView"
+        android:layout_width="413dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partySubHeadingInfo" />
+
+    <Button
+        android:id="@+id/settingsBtnCanvassers"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/settings_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leadersParty"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/sfpro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/canvasserPageTitle" />
+
+    <TextView
+        android:id="@+id/partySubHeadingInfo"
+        android:layout_width="256dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sfpro"
+        android:text="List of canvassers for the party above:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leadersParty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeBtn"
+        app:showAsAction="never"
+        android:title="Home"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/refreshBtn"
+        app:showAsAction="never"
+        android:title="Refresh"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/logoutBtn"
+        app:showAsAction="never"
+        android:title="Log Out"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/accountBtn"
+        app:showAsAction="never"
+        android:title="Account"
+        android:orderInCategory="100"
+        />
+
+</menu>

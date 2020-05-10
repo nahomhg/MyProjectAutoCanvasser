@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage.CanvasserHome">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="501dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="496dp"
+        android:scaleType="matrix"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/login_banner" />
+
+    <Button
+        android:id="@+id/profileBtn"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/navi_btns"
+        android:drawableBottom="@drawable/ic_person_outline_black_28dp"
+        android:paddingBottom="40dp"
+        android:fontFamily="@font/sfpro"
+        android:text="Profile"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/myDistrictBtn"
+        app:layout_constraintTop_toBottomOf="@+id/myDistrictBtn" />
+
+    <Button
+        android:id="@+id/partyStatsBtn"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:background="@drawable/navi_btns"
+        android:drawableBottom="@drawable/ic_poll_black_24dp"
+        android:fontFamily="@font/sfpro"
+        android:paddingBottom="40dp"
+        android:text="Party Stats"
+        android:textAllCaps="false"
+        app:layout_constraintBaseline_toBaselineOf="@+id/profileBtn"
+        app:layout_constraintStart_toStartOf="@+id/votersContactedBtn" />
+
+    <Button
+        android:id="@+id/votersContactedBtn"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/navi_btns"
+        android:drawableBottom="@drawable/baseline_contacted_black_24"
+        android:fontFamily="@font/sfpro"
+        android:paddingLeft="4dp"
+        android:paddingBottom="45dp"
+        android:text="Voters Contacted"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toEndOf="@+id/myDistrictBtn"
+        app:layout_constraintTop_toBottomOf="@+id/startCanvassingBtn" />
+
+    <TextView
+        android:id="@+id/greetingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="78dp"
+        android:fontFamily="@font/sfpro"
+        android:text="Hello, "
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="328dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:text="Let's Make Canvassing easier"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingUser" />
+
+    <Button
+        android:id="@+id/startCanvassingBtn"
+        android:layout_width="205dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/rectangle_btns"
+        android:drawableRight="@drawable/go_btn"
+        android:elevation="8dp"
+        android:fontFamily="@font/sfpro"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="Start Canvassing"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/myDistrictBtn"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/navi_btns"
+        android:drawableBottom="@drawable/baseline_map_black_18dp"
+        android:fontFamily="@font/sfpro"
+        android:paddingBottom="40dp"
+        android:text="My District"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startCanvassingBtn" />
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/settings_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
